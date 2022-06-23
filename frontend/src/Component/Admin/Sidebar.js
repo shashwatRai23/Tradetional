@@ -23,7 +23,7 @@ const Sidebar = () => {
           <Dashboard /> Dashboard
         </p>
       </Link>
-      <a href="#">
+      <div>
         <TreeView
           defaultCollapseIcon={<ExpandMore />}
           defaultExpandIcon={<ImportExport />}
@@ -37,7 +37,7 @@ const Sidebar = () => {
             </Link>
           </TreeItem>
         </TreeView>
-      </a>
+      </div>
       <Link to="/admin/orders">
         <p>
           <ListAlt /> Orders

@@ -87,6 +87,7 @@ const MyOrders = () => {
 
   return (
     <Fragment>
+      {alert && <Alert severity="info">{message}</Alert>}
       <Metadata title={`${user.name} - Orders`} />
 
       {loading ? (

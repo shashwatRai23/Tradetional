@@ -24,7 +24,7 @@ const ProductDetails = (props) => {
   let { id } = useParams();
 
   const { product, loading } = useSelector((state) => state.productDetails);
-  const { success, error: reviewError } = useSelector(
+  const { success } = useSelector(
     (state) => state.newReview
   );
 

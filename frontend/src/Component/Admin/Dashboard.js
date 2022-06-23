@@ -3,7 +3,6 @@ import Sidebar from "./Sidebar.js";
 import "./Dashboard.css";
 import { Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import { Doughnut, Line } from "react-chartjs-2";
 import { useSelector, useDispatch } from "react-redux";
 import { getAdminProduct } from "../../actions/productAction";
 import { getAllOrders } from "../../actions/orderAction.js";

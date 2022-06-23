@@ -7,7 +7,7 @@ import { FiMail } from "react-icons/fi";
 import { AiFillUnlock } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useLocation } from "react-router-dom";
-import { clearErrors, login, register } from "../../actions/userAction";
+import { login, register } from "../../actions/userAction";
 
 const LoginSignUp = () => {
   const dispatch = useDispatch();
@@ -15,7 +15,7 @@ const LoginSignUp = () => {
   const navigate = useNavigate();
   const location= useLocation();
 
-  const { error, loading, isAuthenticated } = useSelector(
+  const {  loading, isAuthenticated } = useSelector(
     (state) => state.user
   );
 
