@@ -1,0 +1,24 @@
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background: white url("./loader3.gif") no-repeat center center;
+  background-size: 25%;
+  max-width: 100%;
+}
+
+/* .loading div {
+  width: 10vmax;
+  height: 10vmax;
+  border-bottom: 5px solid rgb(110, 110, 110);
+  border-radius: 50%;
+  animation: loadingRotate 800ms linear infinite;
+}
+
+@keyframes loadingRotate {
+    from{
+        transform: rotateZ(0%);
+    }
+  to {
+    transform: rotateZ(-360%);
+  }
+} */

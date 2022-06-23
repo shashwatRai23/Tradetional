@@ -1,0 +1,71 @@
+.productListContainer {
+  max-width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  border-left: 1px solid rgba(0, 0, 0, 0.158);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.productListTable div::-webkit-scrollbar {
+  height: 4px !important;
+}
+
+.productListTable div::-webkit-scrollbar-thumb {
+  background: rgb(230, 57, 70) !important;
+  background: linear-gradient(
+    90deg,
+    rgba(230, 57, 70, 1) 0%,
+    rgba(9, 9, 121, 1) 51%,
+    rgba(82, 183, 136, 1) 100%
+  ) !important;
+}
+
+#productListHeading {
+  font: 400 2rem "Roboto";
+  padding: 0.5vmax;
+  box-sizing: border-box;
+  background: #121fcf;
+  background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s;
+  margin: 2rem;
+  text-align: center;
+}
+
+.productListTable {
+  background-color: white;
+  border: none !important;
+}
+
+.productListTable div {
+  font: 300 1vmax "Roboto";
+  color: rgba(0, 0, 0, 0.678);
+  border: none !important;
+}
+
+.productListTable a,
+.productListTable button {
+  color: rgba(0, 0, 0, 0.527);
+  transition: all 0.5s;
+}
+
+.productListTable a:hover {
+  color: tomato;
+}
+
+.productListTable button:hover {
+  color: rgb(236, 30, 30);
+}
+
+.MuiDataGrid-columnHeader div {
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 600px) {
+  .productListTable div {
+    font: 300 4vw "Roboto";
+  }
+}

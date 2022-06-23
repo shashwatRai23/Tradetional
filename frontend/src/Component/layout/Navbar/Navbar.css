@@ -1,0 +1,119 @@
+.nav {
+  display: flex;
+  position: static;
+  justify-content: space-around;
+  gap: 2em;
+  z-index: 3;
+  padding: 0.8em 1em;
+  margin: 0;
+  background-color: white;
+  align-items: center;
+  transition: all 0.5s;
+  align-items: center;
+}
+
+.nav .nav_logo img {
+  width: 200px;
+}
+
+/* .nav::after {
+  content: "";
+  width: 100vw;
+  height: 100vmin;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  background: rgb(255, 186, 8);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 186, 8, 1) 0%,
+    rgba(232, 93, 4, 1) 35%,
+    rgba(255, 186, 8, 1) 100%
+  );
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+} */
+
+.nav_links {
+  display: flex;
+  gap: 3em;
+  align-items: center;
+}
+
+.nav_links a {
+  text-decoration: none;
+  background: #121fcf;
+  background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  font-family: "Space Mono", monospace;
+  transition: all 0.2s;
+}
+
+.nav_links a:hover {
+  transform: scale(1.1);
+  background: #cf1512;
+  background: linear-gradient(to right, #121fcf 100%, #cf1512 0%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* letter-spacing: 4px; */
+}
+
+.nav .nav_login {
+  color: white;
+  background-color: #6a040f;
+  border-radius: 5px;
+  padding: 0.2em 0.3em;
+}
+
+.nav .nav_cart {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.nav .nav_cart > span > span {
+  position: absolute;
+  font-family: "Roboto";
+  font-size: 0.5em;
+  padding: 0.3em 0.4em;
+  margin-left: 3px;
+  color: white;
+  border-radius: 50%;
+  background: #121fcf;
+  background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav .nav_cart_active {
+  /* animation-name: activeCart; */
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background: #121fcf;
+  background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 2px solid #e63946;
+}
+
+@keyframes activeCart {
+  0% {
+    color: #6a040f;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hamburger_menu {
+    font-size: 1.3em;
+    left: 5%;
+  }
+}

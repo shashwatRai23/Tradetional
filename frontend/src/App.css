@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(230, 57, 70);
+  background: linear-gradient(
+    180deg,
+    rgba(230, 57, 70, 1) 0%,
+    rgba(9, 9, 121, 1) 51%,
+    rgba(82, 183, 136, 1) 100%
+  );
+  border-radius: 10px;
+}
